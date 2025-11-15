@@ -1,0 +1,34 @@
+{
+  "themeName": "現在のルーレット配色",
+  "description": "背景、ウィール、ハブ、主要な操作ボタン、セグメントのデフォルトカラーなどの配色情報です。",
+  "palette": {
+    "background": "#FFF3E8",
+    "wheel": {
+      "border": "#F9B6A8"
+    },
+    "hub": "#FFE8E2",
+    "accent": {
+      "primary": "#F57C6A",
+      "comment": "SPINボタン、ポインター、結果テキストで使用"
+    },
+    "segmentText": {
+      "fill": "#333333",
+      "outline": "#fff4df"
+    },
+    "defaultSegmentColors": [
+      "#FFC367",
+      "#88CECD",
+      "#FF967C",
+      "#75CAB2",
+      "#FEC8D8",
+      "#A0E7E5",
+      "#668A93",
+      "#FFD263",
+      "#79D3BC",
+      "#FFCBC2",
+      "#B2D8B8",
+      "#FFBE98",
+      "#C7B9FF"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "roulette-settings-app",
+  "version": "1.0.0",
+  "description": "OBSルーレット設定アプリ",
+  "author": "NiskyPiyoPiyo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.26.3"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.example.roulette-app",
+    "productName": "OBSルーレット",
+    "copyright": "Copyright © 2024 Your Name",
+    "files": [
+      "**/*",
+      "!**/*.{map,ts,dev.js}",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,yarn-error.log,yarn-debug.log,app-builder-debug.log}"
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    },
+    "mac": {
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "icon": "build/icon.png"
+    }
+  }
+}

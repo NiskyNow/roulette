@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ルーレット実行</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="roulette.css">
+</head>
+<body>
+    <canvas id="confetti-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 100;"></canvas>
+    <div id="result-container"><div id="result-popup"><span class="result-text"></span></div></div>
+
+    <div class="wheel-container">
+        <div class="bg-decoration"></div>
+        <canvas id="canvas" width="450" height="450"></canvas>
+        
+        <svg id="pointer" width="90" height="90" viewBox="0 -100 300 400">
+          <path d="M 150 250 L 70 50 C 70 50, 150 -50, 230 50 L 150 250 Z" fill="#FF8C8C" stroke="#FF8C8C" 
+                stroke-width="20" 
+                stroke-linejoin="round" />
+        </svg>
+    </div>
+    <button id="spinBtn">SPIN</button>
+
+    <audio id="startSound" preload="auto"><source src="start.mp3" type="audio/mpeg"></audio>
+    <audio id="spinSound" preload="auto" loop><source src="spin.mp3" type="audio/mpeg"></audio>
+    <audio id="heartbeat" preload="auto" loop><source src="heartbeat.mp3" type="audio/mpeg"></audio>
+    <audio id="fakeSound" preload="auto"><source src="fake.mp3" type="audio/mpeg"></audio>
+    <script src="./roulette-renderer.js"></script>
+</body>
+</html>

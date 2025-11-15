@@ -1,0 +1,69 @@
+{
+  "activeProfileId": "profile-1",
+  "profiles": [
+    {
+      "id": "profile-1",
+      "name": "だのたんルーレット",
+      "items": [
+        {
+          "name": "ノニ",
+          "probability": 25,
+          "color": "#f183e3",
+          "isCustomColor": true,
+          "calculatedProb": 25
+        },
+        {
+          "name": "チェキ",
+          "probability": 42,
+          "color": "#B7E4C7",
+          "isCustomColor": true,
+          "calculatedProb": 42
+        },
+        {
+          "name": "メッセージ動画",
+          "probability": 25,
+          "color": "#D4A7E5",
+          "isCustomColor": true,
+          "calculatedProb": 25
+        },
+        {
+          "name": "お菓子",
+          "probability": null,
+          "color": "#FFF8B5",
+          "isCustomColor": false,
+          "calculatedProb": 8
+        }
+      ],
+      "settings": {
+        "title": "だのたんルーレット",
+        "fakeEnabled": false,
+        "transparentBg": true
+      }
+    },
+    {
+      "id": "profile-2",
+      "name": "豪華版 (サブスク100件用など)",
+      "items": [
+        {
+          "name": "新規項目",
+          "probability": null,
+          "color": "#FFC2D1",
+          "isCustomColor": false,
+          "calculatedProb": 50
+        },
+        {
+          "name": "新規項目",
+          "probability": null,
+          "color": "#B7E4C7",
+          "isCustomColor": false,
+          "calculatedProb": 50
+        }
+      ],
+      "settings": {
+        "title": "100件達成おめでとう！",
+        "fakeEnabled": true,
+        "transparentBg": true
+      }
+    }
+  ]
+}
